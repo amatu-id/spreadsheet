@@ -1,0 +1,9 @@
+{
+  "name": "Amatu Sheets",
+  "short_name": "Sheets",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#e9eef6",
+  "theme_color": "#1e8e5a",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
