@@ -108,7 +108,12 @@ export function popup(content, at, opts = {}) {
 // ---------- dialogs ----------
 export function dialog({ title, body, buttons = [], width = 460, onClose, cls = '', noBackdropClose = false }) {
   const back = el('div.dlg-back');
-  const close = () => { back.remove(); document.removeEventListener('keydown', key, true); onClose?.(); };
+  const close = () => {
+    back.remove();
+    document.removeEventListener('keydown', key, true);
+    onClose?.();
+    if (!document.querySelector('.dlg-back') && !document.activeElement?.closest?.('input,textarea,select')) document.querySelector('.cell-input')?.focus({ preventScroll: true });
+  };
   const foot = el('div.dlg-foot');
   for (const b of buttons) {
     if (b.spacer) { foot.append(el('span.flex1')); continue; }

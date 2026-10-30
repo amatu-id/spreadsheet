@@ -486,6 +486,7 @@ export class App {
     // start typing
     if (k.length === 1 && !e.altKey) {
       if (!this.canEdit(g.sel.r, g.sel.c)) { stop(); return; }
+      if (e.target !== g.input) { e.preventDefault(); g.startEdit(k, 'enter'); return; }
       g.startEdit('', 'enter');
       // character goes into the textarea by default action
     }
