@@ -1,7 +1,7 @@
 # Amatu Sheets
 
 Spreadsheet di browser yang memadukan alur kerja Google Sheets dengan fitur lanjutan Microsoft Excel.
-Live: https://liemyo.github.io/spreadsheet/
+Live: https://amatu-id.github.io/spreadsheet/
 
 ## Fitur
 - Grid canvas cepat: freeze panes, gabung sel, sembunyikan/ubah ukuran baris & kolom, zoom, isi otomatis (fill handle), salin/tempel dengan format, tempel spesial.
